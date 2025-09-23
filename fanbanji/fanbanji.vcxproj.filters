@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9121c90f-481b-420c-b655-aac5e12c7079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{bf7a4bcb-30c8-40da-9b49-6f78f6a9bc25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{11bb325e-943a-40fd-8ddf-8a8e7b0eaec8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\fanbanji.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\fanbanji.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\checkbox.png">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fanbanji.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fanbanjiDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataByCmdDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataByPollingDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\analyzeCmd.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\crc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\log.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\publicFun.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\pubStruct.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\serialport.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\serialThread.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DataByControlV2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\cusCheckBox.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="configByIoStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\analyzeByNetwork.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogReadOnly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogNetworkMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogNetAlarm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CClientSocket.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogConfigV2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogForceIo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogIoReplace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogMsgBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogFunCfg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CCusButton.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogVersionChoice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CCDialogSetIP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CDialogLogManage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fanbanji.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fanbanjiDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dataByCmdDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dataByPollingDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\analyzeCmd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\publicFun.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serialport.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serialThread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DataByControlV2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cusCheckBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="configByIoStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\analyzeByNetwork.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogReadOnly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogNetworkMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogNetAlarm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CClientSocket.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogConfigV2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogForceIo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogIoReplace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogMsgBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogFunCfg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CCusButton.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogVersionChoice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CCDialogSetIP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDialogLogManage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fanbanji.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

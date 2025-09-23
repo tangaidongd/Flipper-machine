@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C973B1A7-5B16-4747-A7B2-61E35F79AD2F}</ProjectGuid>
+    <RootNamespace>fanbanji</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\checkbox.png" />
+    <None Include="res\fanbanji.ico" />
+    <None Include="res\fanbanji.rc2" />
+    <None Include="res\icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlarmLog.h" />
+    <ClInclude Include="CCDialogSetIP.h" />
+    <ClInclude Include="CDialogLogManage.h" />
+    <ClInclude Include="CDialogVersionChoice.h" />
+    <ClInclude Include="CDialogConfig.h" />
+    <ClInclude Include="CDialogForceIo.h" />
+    <ClInclude Include="CDialogFunCfg.h" />
+    <ClInclude Include="CDialogIoReplace.h" />
+    <ClInclude Include="CDialogMsgBox.h" />
+    <ClInclude Include="CDialogNetAlarm.h" />
+    <ClInclude Include="CDialogNetworkMain.h" />
+    <ClInclude Include="CDialogReadOnly.h" />
+    <ClInclude Include="configByIoStatus.h" />
+    <ClInclude Include="dataByCmdDlg.h" />
+    <ClInclude Include="DataByControlV2.h" />
+    <ClInclude Include="dataByPollingDlg.h" />
+    <ClInclude Include="CDialogConfigV2.h" />
+    <ClInclude Include="fanbanji.h" />
+    <ClInclude Include="fanbanjiDlg.h" />
+    <ClInclude Include="inc\analyzeCmd.h" />
+    <ClInclude Include="inc\analyzeByNetwork.h" />
+    <ClInclude Include="inc\CClientSocket.h" />
+    <ClInclude Include="inc\CCusButton.h" />
+    <ClInclude Include="inc\crc.h" />
+    <ClInclude Include="inc\cusCheckBox.h" />
+    <ClInclude Include="inc\log.h" />
+    <ClInclude Include="inc\publicFun.h" />
+    <ClInclude Include="inc\pubStruct.h" />
+    <ClInclude Include="inc\serialport.h" />
+    <ClInclude Include="inc\serialThread.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlarmLog.cpp" />
+    <ClCompile Include="CCDialogSetIP.cpp" />
+    <ClCompile Include="CDialogLogManage.cpp" />
+    <ClCompile Include="CDialogVersionChoice.cpp" />
+    <ClCompile Include="CDialogConfig.cpp" />
+    <ClCompile Include="CDialogForceIo.cpp" />
+    <ClCompile Include="CDialogFunCfg.cpp" />
+    <ClCompile Include="CDialogIoReplace.cpp" />
+    <ClCompile Include="CDialogMsgBox.cpp" />
+    <ClCompile Include="CDialogNetAlarm.cpp" />
+    <ClCompile Include="CDialogNetworkMain.cpp" />
+    <ClCompile Include="CDialogReadOnly.cpp" />
+    <ClCompile Include="configByIoStatus.cpp" />
+    <ClCompile Include="dataByCmdDlg.cpp" />
+    <ClCompile Include="DataByControlV2.cpp" />
+    <ClCompile Include="dataByPollingDlg.cpp" />
+    <ClCompile Include="CDialogConfigV2.cpp" />
+    <ClCompile Include="fanbanji.cpp" />
+    <ClCompile Include="fanbanjiDlg.cpp" />
+    <ClCompile Include="src\analyzeCmd.cpp" />
+    <ClCompile Include="src\analyzeByNetwork.cpp" />
+    <ClCompile Include="src\CClientSocket.cpp" />
+    <ClCompile Include="src\CCusButton.cpp" />
+    <ClCompile Include="src\crc.cpp" />
+    <ClCompile Include="src\cusCheckBox.cpp" />
+    <ClCompile Include="src\log.cpp" />
+    <ClCompile Include="src\publicFun.cpp" />
+    <ClCompile Include="src\serialport.cpp" />
+    <ClCompile Include="src\serialThread.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fanbanji.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="fanbanji.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
